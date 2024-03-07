@@ -1,0 +1,43 @@
+{
+  "pt": {
+    "navBar": {
+      "aboutMe": "Sobre Mim",
+      "tecnologies": "Tecnologias",
+      "projects": "Projetos",
+      "certificates": "Certificados",
+      "contact": "Contato"
+    },
+    "homePage": {
+      "text": "Olá, eu me chamo Pedro Flores. Sou um desenvolvedor com Foco no Front-End e sou graduado em Análise e Desenvolvimento de Sistemas pela FATEC de Lins.",
+      "buttonText": "Ver História Completa ->"
+    },
+    "homePageModal": {
+      "closeButtonText": "Fechar",
+      "firstText": "Meu primeiro contato com programação ocorreu aos 13 anos, enquanto jogava Tibia. Naquela época, desejava poder 'editar' os monstros presentes no jogo, o que me levou a explorar seus arquivos. Aprendi o básico de programação modificando-os conforme meus interesses. Esse foi o meu início no mundo da programação, e eu já estava encantado. Além de na época já ter aprendido o básico sobre hospedagem de servidores.",
+      "secondText": "Aos 16 anos, descobri a Udemy e vi nela a chance de realizar meu sonho de me tornar um desenvolvedor de jogos. Foi quando me deparei com o curso 'Jogos 2D com Unity + C#', que se tornou um marco no meu aprendizado. Foi minha primeira experiência com a linguagem C#, através da qual aprendi sobre estruturas de dados fundamentais, como vetores, matrizes e listas. Esse período foi crucial para o aprofundamento dos meus conhecimentos em programação.",
+      "thirdText": "Aos 18 anos resolvi entrar de vez no mundo da programação e comecei a minha faculdade de Análise e Desenvolvimento de Sistemas pela FATEC de Lins(SP). Lá eu vi o quão mais complicado era o mundo da programação do que eu imaginava, porém aprendi conceitos extremamente importantes como Metodologias Ágeis, API's, Arquiteturas de Software, Estruturas de Dados, Banco de Dados e muito mais...",
+      "fourthText": "Aos 21 anos, formado em Análise e Desenvolvimento de Sistemas, agora estou iniciando a minha pós graduação em Full Stack Development pela FIAP."
+    }
+  },
+
+  "en": {
+    "navBar": {
+      "aboutMe": "Aboute Me",
+      "tecnologies": "Tecnologies",
+      "projects": "Projects",
+      "certificates": "Certificates",
+      "contact": "Contact"
+    },
+    "homePage": {
+      "text": "Hello, my name is Pedro Flores. I am a developer focused on Front-End and I have a degree in Analysis and Development of Systems from FATEC in Lins (SP - BRAZIL)",
+      "buttonText": "Full History ->"
+    },
+    "homePageModal": {
+      "closeButtonText": "Close",
+      "firstText": "My first encounter with programming happened at 13 years old, while I was playing Tibia. At that time, I wished I could 'edit' the monsters in the game, which led me to explore its files. I learned the basics of programming by modifying them according to my interests. That was my beginning in the world of programming, and I was already fascinated. Additionally, by that time, I had also learned the basics about server hosting.",
+      "secondText": "At 16, I discovered Udemy and saw in it the opportunity to fulfill my dream of becoming a game developer. That's when I came across the course '2D Games with Unity + C#', which became a milestone in my learning journey. It was my first experience with the C# language, through which I learned about fundamental data structures, such as arrays, matrices, and lists. This period was crucial for deepening my understanding of programming. ",
+      "thirdText": "At 18, I decided to fully dive into the world of programming and started my college education in Systems Analysis and Development at FATEC in Lins (SP). There, I saw how much more complex the world of programming was than I had imagined, but I learned extremely important concepts such as Agile Methodologies, APIs, Software Architectures, Data Structures, Databases, and much more...",
+      "fourthText": "At 21, having graduated in Systems Analysis and Development, I am now starting my postgraduate degree in Full Stack Development at FIAP."
+    }
+  }
+}

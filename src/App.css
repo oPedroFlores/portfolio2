@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,800;1,800&display=swap');
+
+html {
+  background-color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --primaryBackground: #181619;
+  --primaryColor: rgb(171, 204, 189);
+  --secondaryBackground: #0d1317;
+  --secondaryColor: rgb(137, 210, 220);
+  --hoverColor: rgb(228, 222, 208);
+  --white: rgb(250, 250, 250);
+  --stickyNavBar: #37515c;
+  --stickyNavBarDark: #28383f;
+  --stickyNavBarFont: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hover Effect */
+
+.hoverText::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
 
-@keyframes App-logo-spin {
-  from {
+.hoverText:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hoverText::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #e4ded0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.hoverText {
+  position: relative;
+  padding: 5px;
+}
+
+.hoverText:hover {
+  color: black;
+  fill: black;
+}
+
+.hoverText:hover svg {
+  fill: black;
+}
+
+/* lINK ATIVO NA NAVBAR */
+.activeLink {
+  transition: all 0.3s ease;
+  font-size: 1.25rem !important;
+  background: #e4ded0 !important;
+  color: black !important;
+}
+
+.navScroll .hoverText::before {
+  background-color: black;
+}
+
+/* Wave Hand */
+
+.waveHand {
+  font-size: 4rem;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    transform: rotate(14deg);
   }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Components */
+.defaultButton {
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  background-size: 300%;
+  transition: all 0.6s;
+  color: black;
+  background-image: linear-gradient(90deg, var(--primaryColor) 20%, black 50%);
+}
+
+.defaultButton:hover {
+  color: #fff;
+  background-position: 99%;
+  transform: translateX(0.5rem);
+}
+
+.defaultButton:active {
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
 }

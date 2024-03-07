@@ -1,0 +1,65 @@
+.AboutMeModal {
+  word-break: break-all;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  color: var(--primaryColor);
+}
+.aboutMeDiv {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.aboutMeDiv span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  background-color: var(--primaryBackground);
+  font-size: 1.5rem;
+}
+
+.aboutMeDiv p {
+  font-size: 1.125rem;
+  padding: 0 20px;
+  word-break: keep-all;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagesContainer img {
+  max-width: 35%;
+}
+
+@media (max-width: 1000px) {
+  .imagesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagesContainer img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imagesContainer img {
+    max-width: 80%;
+  }
+}
