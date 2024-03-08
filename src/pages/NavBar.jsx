@@ -6,7 +6,7 @@ import { TfiMenu } from 'react-icons/tfi';
 const NavBar = ({ language, setLanguage }) => {
   const [navBackground, setNavBackground] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('homePage');
   const flyerMenu = React.useRef(null);
   useEffect(() => {
     const changeBackground = () => {

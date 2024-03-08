@@ -17,9 +17,11 @@
       "secondText": "Aos 16 anos, descobri a Udemy e vi nela a chance de realizar meu sonho de me tornar um desenvolvedor de jogos. Foi quando me deparei com o curso 'Jogos 2D com Unity + C#', que se tornou um marco no meu aprendizado. Foi minha primeira experiência com a linguagem C#, através da qual aprendi sobre estruturas de dados fundamentais, como vetores, matrizes e listas. Esse período foi crucial para o aprofundamento dos meus conhecimentos em programação.",
       "thirdText": "Aos 18 anos resolvi entrar de vez no mundo da programação e comecei a minha faculdade de Análise e Desenvolvimento de Sistemas pela FATEC de Lins(SP). Lá eu vi o quão mais complicado era o mundo da programação do que eu imaginava, porém aprendi conceitos extremamente importantes como Metodologias Ágeis, API's, Arquiteturas de Software, Estruturas de Dados, Banco de Dados e muito mais...",
       "fourthText": "Aos 21 anos, formado em Análise e Desenvolvimento de Sistemas, agora estou iniciando a minha pós graduação em Full Stack Development pela FIAP."
+    },
+    "techPage": {
+      "title": "Tecnologias"
     }
   },
-
   "en": {
     "navBar": {
       "aboutMe": "Aboute Me",
@@ -38,6 +40,9 @@
       "secondText": "At 16, I discovered Udemy and saw in it the opportunity to fulfill my dream of becoming a game developer. That's when I came across the course '2D Games with Unity + C#', which became a milestone in my learning journey. It was my first experience with the C# language, through which I learned about fundamental data structures, such as arrays, matrices, and lists. This period was crucial for deepening my understanding of programming. ",
       "thirdText": "At 18, I decided to fully dive into the world of programming and started my college education in Systems Analysis and Development at FATEC in Lins (SP). There, I saw how much more complex the world of programming was than I had imagined, but I learned extremely important concepts such as Agile Methodologies, APIs, Software Architectures, Data Structures, Databases, and much more...",
       "fourthText": "At 21, having graduated in Systems Analysis and Development, I am now starting my postgraduate degree in Full Stack Development at FIAP."
+    },
+    "techPage": {
+      "title": "Tecnologies"
     }
   }
 }

@@ -1,11 +1,63 @@
 .tecnologies {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
   font-size: 1.5rem;
+  padding: 20px;
   background-color: var(--secondaryBackground);
+}
+
+.animateTag {
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.animateTag img {
+  z-index: 3;
+  border-radius: 30px;
+  width: 400px;
+}
+
+.tecTitle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  font-size: 6.5rem;
+  color: white;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .tecTitle {
+    font-size: 5rem;
+  }
+  .animateTag img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tecTitle {
+    font-size: 3rem;
+  }
+  .animateTag img {
+    width: 200px;
+  }
+}
+
+.firstTecTitle {
+  z-index: 4;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
 }

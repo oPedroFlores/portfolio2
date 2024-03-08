@@ -10,6 +10,7 @@ import AboutMeModal from './modal/AboutMeModal';
 
 const HomePage = ({ language }) => {
   const [modal, setModal] = React.useState(false);
+  const textAprRef = React.useRef(null);
   function ModalTrue() {
     setModal(true);
   }
@@ -25,6 +26,7 @@ const HomePage = ({ language }) => {
       document.body.classList.remove('no-scroll');
     };
   }, [modal]);
+  // Efeito typewriter
 
   return (
     <section className={`${styles.homeSection} section`} id="homePage">
@@ -61,6 +63,7 @@ const HomePage = ({ language }) => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6 }}
+            ref={textAprRef}
           >
             {language.homePage.text}
           </motion.p>
@@ -73,10 +76,12 @@ const HomePage = ({ language }) => {
             animate="visible"
             transition={{ duration: 0.7 }}
           >
-            <Button
-              text={language.homePage.buttonText}
-              theFunction={ModalTrue}
-            />
+            <div className={styles.openModalMenu}>
+              <Button
+                text={language.homePage.buttonText}
+                theFunction={ModalTrue}
+              />
+            </div>
           </motion.div>
         </div>
         <div className={styles.aboutMePhoto}>
