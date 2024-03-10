@@ -2,8 +2,9 @@ import React from 'react';
 import styles from '../css/Tecnologies.module.css';
 import tecImg from '../img/tecimage.png';
 import { motion } from 'framer-motion';
+import TechCard from './components/TechCard';
 
-const Tecnologies = ({ language }) => {
+const Tecnologies = ({ language, techs }) => {
   const [isSmallScreen, setIsSmallScreen] = React.useState(
     window.innerWidth < 500,
   );
@@ -43,6 +44,16 @@ const Tecnologies = ({ language }) => {
     },
   };
 
+  // Scroll no desktop,
+  const [width, setWidth] = React.useState(0);
+  const slider_wrapper = React.useRef();
+
+  React.useEffect(() => {
+    setWidth(
+      slider_wrapper.current.scrollWidth - slider_wrapper.current.offsetWidth,
+    );
+  }, []);
+
   return (
     <section className={`${styles.tecnologies} section`} id="tecnologies">
       <div className={styles.animateTag}>
@@ -64,8 +75,21 @@ const Tecnologies = ({ language }) => {
           {language.techPage.title}
         </motion.p>
       </div>
-      <div className={styles.tecResume}></div>
-      <div className={styles.techsDiv}></div>
+      <div className={styles.tecResume}>{language.techPage.tecResume}</div>
+      <motion.div ref={slider_wrapper} className={styles.techsDiv}>
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className={styles.techsDivWrapper}
+          whileTap={{ cursor: 'grabbing' }}
+        >
+          {techs
+            .sort((a, b) => b.level - a.level)
+            .map((tech, index) => (
+              <TechCard tech={tech} />
+            ))}
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

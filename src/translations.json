@@ -19,7 +19,8 @@
       "fourthText": "Aos 21 anos, formado em Análise e Desenvolvimento de Sistemas, agora estou iniciando a minha pós graduação em Full Stack Development pela FIAP."
     },
     "techPage": {
-      "title": "Tecnologias"
+      "title": "Tecnologias",
+      "tecResume": "Tenho paixão por estudar e estou sempre em busca de aprender algumas tecnologias novas e aperfeiçoar as que já conheço. Essas são algumas das tecnologias e linguagens que já estudei e um pouco do meu nível de aprendizado sobre elas."
     }
   },
   "en": {
@@ -42,7 +43,8 @@
       "fourthText": "At 21, having graduated in Systems Analysis and Development, I am now starting my postgraduate degree in Full Stack Development at FIAP."
     },
     "techPage": {
-      "title": "Tecnologies"
+      "title": "Tecnologies",
+      "tecResume": "I have a passion for studying and I'm always seeking to learn new technologies and improve the ones I already know. Here are some of the technologies and languages I have studied, along with a brief description of my proficiency level in each of them."
     }
   }
 }

@@ -61,3 +61,62 @@
   -webkit-text-stroke: 2px white;
   color: transparent;
 }
+
+.tecResume {
+  width: 60%;
+  text-align: center;
+  color: var(--secondaryColor);
+}
+
+.techsDiv {
+  display: flex;
+  width: 80%;
+  overflow-x: auto;
+  gap: 50px;
+  user-select: none;
+  touch-action: pan-y;
+}
+.techsDiv::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem no Chrome, Edge, etc. */
+}
+
+/* techCard */
+
+.techCard {
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 350px;
+  height: 300px;
+  border: 1px solid var(--secondaryColor);
+  background-color: #040f0f;
+  color: var(--secondaryColor);
+}
+
+.techsDivWrapper {
+  cursor: grab;
+  display: flex;
+  gap: 50px;
+}
+
+.techDesc {
+  margin-top: 5px;
+  font-size: 1.125rem;
+}
+
+.techTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.techIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 3rem;
+}
