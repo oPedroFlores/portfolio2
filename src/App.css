@@ -2,6 +2,7 @@
 
 html {
   background-color: red;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +20,7 @@ a {
 :root {
   --primaryBackground: #181619;
   --primaryColor: rgb(171, 204, 189);
+  --primarySubColor: #143d3e;
   --secondaryBackground: #0d1317;
   --secondaryColor: rgb(137, 210, 220);
   --hoverColor: rgb(228, 222, 208);
@@ -73,6 +75,13 @@ a {
   font-size: 1.25rem !important;
   background: #e4ded0 !important;
   color: black !important;
+}
+
+@media (max-width: 1100px) {
+  .activeLink {
+    font-size: 1rem !important;
+    padding: 0 5px;
+  }
 }
 
 .navScroll .hoverText::before {

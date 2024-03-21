@@ -54,9 +54,51 @@ const Tecnologies = ({ language, techs }) => {
     );
   }, []);
 
+  const fadeInAnimationText = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
+  const fadeAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
+  const [largura, setLargura] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setLargura(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className={`${styles.tecnologies} section`} id="tecnologies">
-      <div className={styles.animateTag}>
+      <motion.div className={styles.animateTag}>
         <motion.img
           src={tecImg}
           alt="Tecnologias"
@@ -74,8 +116,15 @@ const Tecnologies = ({ language, techs }) => {
         >
           {language.techPage.title}
         </motion.p>
-      </div>
-      <div className={styles.tecResume}>{language.techPage.tecResume}</div>
+      </motion.div>
+      <motion.div
+        className={styles.tecResume}
+        variants={fadeInAnimationText}
+        initial="initial"
+        whileInView="animate"
+      >
+        {language.techPage.tecResume}
+      </motion.div>
       <motion.div ref={slider_wrapper} className={styles.techsDiv}>
         <motion.div
           drag="x"
@@ -86,7 +135,7 @@ const Tecnologies = ({ language, techs }) => {
           {techs
             .sort((a, b) => b.level - a.level)
             .map((tech, index) => (
-              <TechCard tech={tech} />
+              <TechCard tech={tech} index={index} largura={largura} />
             ))}
         </motion.div>
       </motion.div>

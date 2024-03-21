@@ -12,7 +12,8 @@ import {
 } from 'react-icons/fa';
 import { SiExpress } from 'react-icons/si';
 import { TbBrandMysql } from 'react-icons/tb';
-const TechCard = ({ tech }) => {
+import { motion } from 'framer-motion';
+const TechCard = ({ tech, index, largura }) => {
   const iconMapping = {
     js: <FaJs />,
     jsx: <FaReact />,
@@ -26,13 +27,33 @@ const TechCard = ({ tech }) => {
     express: <SiExpress />,
   };
 
-  console.log(tech);
+  const fadeInAnimationText = {
+    initial: {
+      opacity: 0,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: index > 4 ? 0.2 : index * 0.2,
+      },
+    }),
+  };
+
   return (
-    <div className={styles.techCard}>
-      <p className={styles.techTitle}>{tech.tec}</p>
-      <p className={styles.techDesc}>{tech.desc}</p>
+    <motion.div
+      className={`${styles.techCard}`}
+      key={index}
+      variants={fadeInAnimationText}
+      initial="initial"
+      whileInView="animate"
+      custom={index}
+      viewport={{ once: true }}
+    >
       <span className={styles.techIcon}>{iconMapping[tech.icon]}</span>
-    </div>
+      <p className={styles.techTitle}>{tech.tec}</p>
+      <p className={styles.techTime}>{tech.time}</p>
+    </motion.div>
   );
 };
 

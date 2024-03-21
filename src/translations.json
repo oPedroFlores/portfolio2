@@ -3,6 +3,7 @@
     "navBar": {
       "aboutMe": "Sobre Mim",
       "tecnologies": "Tecnologias",
+      "history": "Carreira",
       "projects": "Projetos",
       "certificates": "Certificados",
       "contact": "Contato"
@@ -21,12 +22,39 @@
     "techPage": {
       "title": "Tecnologias",
       "tecResume": "Tenho paixão por estudar e estou sempre em busca de aprender algumas tecnologias novas e aperfeiçoar as que já conheço. Essas são algumas das tecnologias e linguagens que já estudei e um pouco do meu nível de aprendizado sobre elas."
+    },
+    "history": {
+      "title": "Carreira",
+      "professions": [
+        {
+          "id": 0,
+          "title": "SABESP",
+          "role": "Aprendiz - Setor Financeiro",
+          "resume": "Trabalhei no setor financeiro da SABESP de Lins, onde auxiliava no controle organizacional e envio de documentos físicos. Também participava na criação de documentos digitais em modelos do Word, Excel e PowerPoint.",
+          "duration": "Agosto de 2018 - Janeiro de 2020 "
+        },
+        {
+          "id": 1,
+          "title": "Lins Fibra",
+          "role": "Estagiário de T.I",
+          "resume": "Auxiliava no controle e manutenção de dispositivos físicos, como Unidades Ópticas de Rede (ONU'S). Verificava causas de problemas na conexão de internet e possiveis soluções para a conexão dos clientes da empresa.",
+          "duration": "Abril de 2020 - Setembro de 2020"
+        },
+        {
+          "id": 2,
+          "title": "ViaRondon",
+          "role": "Auxiliar de T.I & Desenvolvedor",
+          "resume": "Na ViaRondon, desempenho as funções de Auxiliar de T.I e Desenvolvedor, com ênfase no desenvolvimento e análise de sistemas em PHP e JavaScript. Além disso, estou encarregado da manutenção de equipamentos e computadores, análise e monitoramento de dados. Contribuo também com o controle de estoque e realizo uma variedade de tarefas operacionais e técnicas para assegurar a eficiência dos processos internos.",
+          "duration": "Março de 2024 - Atualmente"
+        }
+      ]
     }
   },
   "en": {
     "navBar": {
       "aboutMe": "Aboute Me",
       "tecnologies": "Tecnologies",
+      "history": "Career",
       "projects": "Projects",
       "certificates": "Certificates",
       "contact": "Contact"
@@ -45,6 +73,32 @@
     "techPage": {
       "title": "Tecnologies",
       "tecResume": "I have a passion for studying and I'm always seeking to learn new technologies and improve the ones I already know. Here are some of the technologies and languages I have studied, along with a brief description of my proficiency level in each of them."
+    },
+    "history": {
+      "title": "Career",
+      "professions": [
+        {
+          "id": 0,
+          "title": "SABESP",
+          "role": "Apprentice - Financial Sector",
+          "resume": "I worked in the financial sector of SABESP in Lins, where I assisted in organizational control and the sending of physical documents. I also participated in the creation of digital documents using Word, Excel, and PowerPoint templates.",
+          "duration": "August 2018 - January 2020"
+        },
+        {
+          "id": 1,
+          "title": "Lins Fibra",
+          "role": "IT Intern",
+          "resume": "I assisted in the control and maintenance of physical devices, such as Network Optical Units (ONUs). I checked for causes of internet connection problems and potential solutions for the company's clients.",
+          "duration": "April 2020 - September 2020"
+        },
+        {
+          "id": 2,
+          "title": "ViaRondon",
+          "role": "IT Assistant & Developer",
+          "resume": "At ViaRondon, I perform the functions of IT Assistant and Developer, focusing on the development and analysis of systems in PHP and JavaScript. In addition, I am in charge of maintaining equipment and computers, analyzing and monitoring data. I also contribute to stock control and carry out a variety of operational and technical tasks to ensure the efficiency of internal processes.",
+          "duration": "March 2024 - Present"
+        }
+      ]
     }
   }
 }

@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import Tecnologies from './pages/Tecnologies';
 import translations from './translations.json';
 import techs from './techs.json';
+import History from './pages/History';
 
 function App() {
   const [language, setLanguage] = useState(0);
@@ -20,6 +21,7 @@ function App() {
           language={currentLanguage}
           techs={language ? techs.en : techs.pt}
         />
+        <History language={currentLanguage} />
       </main>
     </>
   );

@@ -20,6 +20,7 @@ const NavBar = ({ language, setLanguage }) => {
       const sections = [
         'homePage',
         'tecnologies',
+        'history',
         'projects',
         'certificates',
         'contact',
@@ -99,6 +100,9 @@ const NavBar = ({ language, setLanguage }) => {
           </a>
           <a className={linkClassName('tecnologies')} href="#tecnologies">
             {renderLinkText('tecnologies', language.navBar.tecnologies)}
+          </a>
+          <a className={linkClassName('history')} href="#history">
+            {renderLinkText('history', language.navBar.history)}
           </a>
           <a className={linkClassName('projects')} href="#projects">
             {renderLinkText('projects', language.navBar.projects)}

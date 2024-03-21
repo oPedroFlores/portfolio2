@@ -68,13 +68,29 @@
   color: var(--secondaryColor);
 }
 
+@media (max-width: 600px) {
+  .tecResume {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .tecResume {
+    width: 100%;
+    font-size: 1.125rem;
+  }
+}
+
 .techsDiv {
+  margin-top: 50px;
   display: flex;
   width: 80%;
   overflow-x: auto;
   gap: 50px;
   user-select: none;
   touch-action: pan-y;
+  scrollbar-width: none;
 }
 .techsDiv::-webkit-scrollbar {
   display: none; /* Esconde a barra de rolagem no Chrome, Edge, etc. */
@@ -83,6 +99,7 @@
 /* techCard */
 
 .techCard {
+  transition: all 0.5s ease-in-out;
   position: relative;
   display: flex;
   text-align: center;
@@ -90,11 +107,12 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
-  min-width: 350px;
-  height: 300px;
+  min-width: 250px;
+  height: 180px;
   border: 1px solid var(--secondaryColor);
   background-color: #040f0f;
   color: var(--secondaryColor);
+  cursor: pointer;
 }
 
 .techsDivWrapper {
@@ -103,9 +121,10 @@
   gap: 50px;
 }
 
-.techDesc {
-  margin-top: 5px;
-  font-size: 1.125rem;
+@media (max-width: 500px) {
+  .techsDivWrapper {
+    gap: 20px;
+  }
 }
 
 .techTitle {
@@ -115,8 +134,20 @@
 }
 
 .techIcon {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 3rem;
+  font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+  .techTitle {
+    font-size: 1.5rem;
+  }
+  .techIcon {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .techCard {
+    min-width: 200px;
+  }
 }
