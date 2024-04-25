@@ -6,6 +6,7 @@
   width: 100%;
   background-color: var(--primaryBackground);
   color: var(--primaryColor);
+  height: 600px;
 }
 
 .historyContainer {
@@ -22,11 +23,17 @@
 }
 @media (max-width: 900px) {
   .historyContainer {
+    margin-top: 80px;
     height: 700px;
     width: 100%;
   }
   .careerInfoWrapper {
     flex-direction: column;
+  }
+  .history{
+    align-items: start;
+    padding: 0;
+    height: 750px;
   }
 }
 
@@ -36,6 +43,9 @@
     gap: 10px;
   }
   .historyContainer {
+    height: 700px;
+  }
+  .history{
     height: 900px;
   }
 }
