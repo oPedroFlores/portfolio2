@@ -1,0 +1,224 @@
+{
+  "pt": {
+    "navBar": {
+      "aboutMe": "Sobre Mim",
+      "tecnologies": "Tecnologias",
+      "history": "Carreira",
+      "projects": "Projetos",
+      "certificates": "Certificados",
+      "contact": "Contato"
+    },
+    "homePage": {
+      "text": "Olá, eu me chamo Pedro Flores. Sou um desenvolvedor com Foco no Front-End e sou graduado em Análise e Desenvolvimento de Sistemas pela FATEC de Lins.",
+      "buttonText": "Ver História Completa ->"
+    },
+    "homePageModal": {
+      "closeButtonText": "Fechar",
+      "firstText": "Meu primeiro contato com programação ocorreu aos 13 anos, enquanto jogava Tibia. Naquela época, desejava poder 'editar' os monstros presentes no jogo, o que me levou a explorar seus arquivos. Aprendi o básico de programação modificando-os conforme meus interesses. Esse foi o meu início no mundo da programação, e eu já estava encantado. Além de na época já ter aprendido o básico sobre hospedagem de servidores.",
+      "secondText": "Aos 16 anos, descobri a Udemy e vi nela a chance de realizar meu sonho de me tornar um desenvolvedor de jogos. Foi quando me deparei com o curso 'Jogos 2D com Unity + C#', que se tornou um marco no meu aprendizado. Foi minha primeira experiência com a linguagem C#, através da qual aprendi sobre estruturas de dados fundamentais, como vetores, matrizes e listas. Esse período foi crucial para o aprofundamento dos meus conhecimentos em programação.",
+      "thirdText": "Aos 18 anos resolvi entrar de vez no mundo da programação e comecei a minha faculdade de Análise e Desenvolvimento de Sistemas pela FATEC de Lins(SP). Lá eu vi o quão mais complicado era o mundo da programação do que eu imaginava, porém aprendi conceitos extremamente importantes como Metodologias Ágeis, API's, Arquiteturas de Software, Estruturas de Dados, Banco de Dados e muito mais...",
+      "fourthText": "Aos 21 anos, formado em Análise e Desenvolvimento de Sistemas, agora estou iniciando a minha pós graduação em Full Stack Development pela FIAP."
+    },
+    "techPage": {
+      "title": "Tecnologias",
+      "tecResume": "Tenho paixão por estudar e estou sempre em busca de aprender algumas tecnologias novas e aperfeiçoar as que já conheço. Essas são algumas das tecnologias e linguagens que já estudei e um pouco do meu nível de aprendizado sobre elas."
+    },
+    "history": {
+      "title": "Carreira",
+      "professions": [
+        {
+          "id": 0,
+          "title": "SABESP",
+          "role": "Aprendiz - Setor Financeiro",
+          "resume": "Trabalhei no setor financeiro da SABESP de Lins, onde auxiliava no controle organizacional e envio de documentos físicos. Também participava na criação de documentos digitais em modelos do Word, Excel e PowerPoint.",
+          "duration": "Agosto de 2018 - Janeiro de 2020 "
+        },
+        {
+          "id": 1,
+          "title": "Lins Fibra",
+          "role": "Estagiário de T.I",
+          "resume": "Auxiliava no controle e manutenção de dispositivos físicos, como Unidades Ópticas de Rede (ONU'S). Verificava causas de problemas na conexão de internet e possiveis soluções para a conexão dos clientes da empresa.",
+          "duration": "Abril de 2020 - Setembro de 2020"
+        },
+        {
+          "id": 2,
+          "title": "ViaRondon",
+          "role": "Auxiliar de T.I & Desenvolvedor",
+          "resume": "Na ViaRondon, desempenho as funções de Auxiliar de T.I e Desenvolvedor, com ênfase no desenvolvimento e análise de sistemas em PHP e JavaScript. Além disso, estou encarregado da manutenção de equipamentos e computadores, análise e monitoramento de dados. Contribuo também com o controle de estoque e realizo uma variedade de tarefas operacionais e técnicas para assegurar a eficiência dos processos internos.",
+          "duration": "Março de 2024 - Atualmente"
+        }
+      ]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "name": "MyFriends",
+        "desc": "MyFriends foi um projeto que desenvolvi com base no curso de React Completo da Origamid. Adicionei algumas funcionalidades como dar like, remover comentários e reatividade entre visualizações e curtidas.",
+        "tecs": ["JavaScript", "React", "Wordpress", "PHP", "CSS", "HTML"],
+        "image": 0,
+        "link": "https://github.com/oPedroFlores/MyFriends"
+      },
+      {
+        "id": 2,
+        "name": "Blog Node",
+        "desc": "Blog Node foi um projeto que fiz com base em um curso de Node. Permite a criação de usuários, artigos e categorias de artigos. Possui proteção de rotas",
+        "tecs": [
+          "JavaScript",
+          "Node",
+          "Express",
+          "MySQL",
+          "Sequelize",
+          "Bootstrap",
+          "CSS",
+          "HTML"
+        ],
+        "image": 1,
+        "link": "https://github.com/oPedroFlores/blog-node"
+      },
+      {
+        "id": 3,
+        "name": "CRUD Users",
+        "desc": "Este foi um projeto básico que fiz com utilizando React, Node.js e MySQL.",
+        "tecs": [
+          "JavaScript",
+          "Node",
+          "Express",
+          "MySQL",
+          "CSS",
+          "HTML",
+          "Axios",
+          "Styled-Components"
+        ],
+        "image": 2,
+        "link": "https://github.com/oPedroFlores/CrudUsers-React-Node"
+      },
+      {
+        "id": 4,
+        "name": "Simples Login e Registro",
+        "desc": "Formulário de login e formulário de registro animados com especificação de parâmetros para email e senha. Feito com HTML, CSS e Javascript.",
+        "tecs": ["JavaScript", "CSS", "HTML"],
+        "image": 3,
+        "link": "https://github.com/oPedroFlores/simple-login-and-register"
+      },
+      {
+        "id": 5,
+        "name": "Bike Shop - Landing Page",
+        "desc": "Landing Page simples de uma loja de bicicletas utilizando HTML e CSS.",
+        "tecs": ["CSS", "HTML"],
+        "image": 4,
+        "link": "https://github.com/oPedroFlores/simples-landing-page-bike"
+      }
+    ]
+  },
+  "en": {
+    "navBar": {
+      "aboutMe": "Aboute Me",
+      "tecnologies": "Tecnologies",
+      "history": "Career",
+      "projects": "Projects",
+      "certificates": "Certificates",
+      "contact": "Contact"
+    },
+    "homePage": {
+      "text": "Hello, my name is Pedro Flores. I am a developer focused on Front-End and I have a degree in Analysis and Development of Systems from FATEC in Lins (SP - BRAZIL)",
+      "buttonText": "Full History ->"
+    },
+    "homePageModal": {
+      "closeButtonText": "Close",
+      "firstText": "My first encounter with programming happened at 13 years old, while I was playing Tibia. At that time, I wished I could 'edit' the monsters in the game, which led me to explore its files. I learned the basics of programming by modifying them according to my interests. That was my beginning in the world of programming, and I was already fascinated. Additionally, by that time, I had also learned the basics about server hosting.",
+      "secondText": "At 16, I discovered Udemy and saw in it the opportunity to fulfill my dream of becoming a game developer. That's when I came across the course '2D Games with Unity + C#', which became a milestone in my learning journey. It was my first experience with the C# language, through which I learned about fundamental data structures, such as arrays, matrices, and lists. This period was crucial for deepening my understanding of programming. ",
+      "thirdText": "At 18, I decided to fully dive into the world of programming and started my college education in Systems Analysis and Development at FATEC in Lins (SP). There, I saw how much more complex the world of programming was than I had imagined, but I learned extremely important concepts such as Agile Methodologies, APIs, Software Architectures, Data Structures, Databases, and much more...",
+      "fourthText": "At 21, having graduated in Systems Analysis and Development, I am now starting my postgraduate degree in Full Stack Development at FIAP."
+    },
+    "techPage": {
+      "title": "Tecnologies",
+      "tecResume": "I have a passion for studying and I'm always seeking to learn new technologies and improve the ones I already know. Here are some of the technologies and languages I have studied, along with a brief description of my proficiency level in each of them."
+    },
+    "history": {
+      "title": "Career",
+      "professions": [
+        {
+          "id": 0,
+          "title": "SABESP",
+          "role": "Apprentice - Financial Sector",
+          "resume": "I worked in the financial sector of SABESP in Lins, where I assisted in organizational control and the sending of physical documents. I also participated in the creation of digital documents using Word, Excel, and PowerPoint templates.",
+          "duration": "August 2018 - January 2020"
+        },
+        {
+          "id": 1,
+          "title": "Lins Fibra",
+          "role": "IT Intern",
+          "resume": "I assisted in the control and maintenance of physical devices, such as Network Optical Units (ONUs). I checked for causes of internet connection problems and potential solutions for the company's clients.",
+          "duration": "April 2020 - September 2020"
+        },
+        {
+          "id": 2,
+          "title": "ViaRondon",
+          "role": "IT Assistant & Developer",
+          "resume": "At ViaRondon, I perform the functions of IT Assistant and Developer, focusing on the development and analysis of systems in PHP and JavaScript. In addition, I am in charge of maintaining equipment and computers, analyzing and monitoring data. I also contribute to stock control and carry out a variety of operational and technical tasks to ensure the efficiency of internal processes.",
+          "duration": "March 2024 - Present"
+        }
+      ]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "name": "MyFriends",
+        "desc": "MyFriends was a project I developed based on the Complete React Course by Origamid. I added some features such as liking, removing comments, and reactivity between views and likes.",
+        "tecs": ["JavaScript", "React", "Wordpress", "PHP", "CSS", "HTML"],
+        "image": 0,
+        "link": "https://github.com/oPedroFlores/MyFriends"
+      },
+      {
+        "id": 2,
+        "name": "Blog Node",
+        "desc": "Blog Node was a project I created based on a Node course. It allows the creation of users, articles, and article categories. It has route protection.",
+        "tecs": [
+          "JavaScript",
+          "Node",
+          "Express",
+          "MySQL",
+          "Sequelize",
+          "Bootstrap",
+          "CSS",
+          "HTML"
+        ],
+        "image": 1,
+        "link": "https://github.com/oPedroFlores/blog-node"
+      },
+      {
+        "id": 3,
+        "name": "CRUD Users",
+        "desc": "This was a basic project I created using React, Node.js, and MySQL.",
+        "tecs": [
+          "JavaScript",
+          "Node",
+          "Express",
+          "MySQL",
+          "CSS",
+          "HTML",
+          "Axios",
+          "Styled-Components"
+        ],
+        "image": 2,
+        "link": "https://github.com/oPedroFlores/CrudUsers-React-Node"
+      },
+      {
+        "id": 4,
+        "name": "Simple Login and Register",
+        "desc": "Animated login and register forms with parameter specification for email and password. Built with HTML, CSS, and JavaScript.",
+        "tecs": ["JavaScript", "CSS", "HTML"],
+        "image": 3,
+        "link": "https://github.com/oPedroFlores/simple-login-and-register"
+      },
+      {
+        "id": 5,
+        "name": "Bike Shop - Landing Page",
+        "desc": "Simple landing page for a bike shop using HTML and CSS.",
+        "tecs": ["CSS", "HTML"],
+        "image": 4,
+        "link": "https://github.com/oPedroFlores/simples-landing-page-bike"
+      }
+    ]
+  }
+}
