@@ -23,7 +23,7 @@ function App() {
           techs={language ? techs.en : techs.pt}
         />
         <History language={currentLanguage} />
-        <Projects language={currentLanguage} />
+        <Projects projects={currentLanguage.projects} />
       </main>
     </>
   );
