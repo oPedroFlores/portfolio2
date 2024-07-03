@@ -3,12 +3,11 @@ import styles from '../css/Home.module.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { ReactComponent as Curriculo } from '../img/svg/cv2.svg';
 import { motion } from 'framer-motion';
-import curriculo from '../cv/portuguesecv.pdf';
 import Modal from './modal/Modal';
 import Button from '../components/Button';
 import AboutMeModal from './modal/AboutMeModal';
 
-const HomePage = ({ language }) => {
+const HomePage = ({ language, curriculo }) => {
   const [modal, setModal] = React.useState(false);
   const textAprRef = React.useRef(null);
   function ModalTrue() {

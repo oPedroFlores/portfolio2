@@ -94,6 +94,11 @@ nav {
   color: white;
 }
 
+.activeLinkLanguage {
+  background-color: var(--primaryColor) !important;
+  color: black !important;
+}
+
 @media (max-width: 1200px) {
   .navLanguage {
     flex-direction: column;
