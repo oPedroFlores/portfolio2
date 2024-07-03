@@ -175,7 +175,14 @@
         "size": 0,
         "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
       }
-    ]
+    ],
+    "getInTouch": {
+      "title": "Entre em contato comigo :)",
+      "firstInput": "Seu Nome",
+      "secondInput": "Email",
+      "thirdInput": "Sua Mensagem...",
+      "button": "Enviar"
+    }
   },
   "en": {
     "navBar": {
@@ -352,6 +359,13 @@
         "size": 0,
         "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
       }
-    ]
+    ],
+    "getInTouch": {
+      "title": "Get in touch with me :)",
+      "firstInput": "Your Name",
+      "secondInput": "Email",
+      "thirdInput": "Your Message...",
+      "button": "Send"
+    }
   }
 }

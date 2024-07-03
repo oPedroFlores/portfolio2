@@ -75,9 +75,29 @@ nav {
 /* Idiomas */
 .navLanguage {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.navLanguage button {
+  padding: 5px 10px;
+  border: 1px solid var(--primaryColor);
+  background-color: transparent;
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.navLanguage button:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .navLanguage {
+    flex-direction: column;
+  }
 }
 
 /* Sticky navbar */

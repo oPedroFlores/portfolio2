@@ -20,9 +20,11 @@ a {
 :root {
   --primaryBackground: #181619;
   --primaryColor: rgb(171, 204, 189);
+  --lightblue: #abccbd;
   --primarySubColor: #143d3e;
   --secondaryBackground: #0d1317;
   --secondaryColor: rgb(137, 210, 220);
+  --secondColor: #89d2dc;
   --hoverColor: rgb(228, 222, 208);
   --white: rgb(250, 250, 250);
   --stickyNavBar: #37515c;

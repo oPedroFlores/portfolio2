@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../css/NavBar.module.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { TfiMenu } from 'react-icons/tfi';
+import React, { useState, useEffect } from "react";
+import styles from "../css/NavBar.module.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { TfiMenu } from "react-icons/tfi";
 
 const NavBar = ({ language, setLanguage }) => {
   const [navBackground, setNavBackground] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [activeSection, setActiveSection] = useState('homePage');
+  const [activeSection, setActiveSection] = useState("homePage");
   const flyerMenu = React.useRef(null);
   useEffect(() => {
     const changeBackground = () => {
@@ -18,14 +18,14 @@ const NavBar = ({ language, setLanguage }) => {
 
       // Determinar a seção atual baseado no scroll
       const sections = [
-        'homePage',
-        'tecnologies',
-        'history',
-        'projects',
-        'certificates',
-        'contact',
+        "homePage",
+        "tecnologies",
+        "history",
+        "projects",
+        "certificates",
+        "contact",
       ];
-      let currentSection = '';
+      let currentSection = "";
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element && window.scrollY >= element.offsetTop - 100) {
@@ -35,20 +35,20 @@ const NavBar = ({ language, setLanguage }) => {
       setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', changeBackground);
-    return () => window.removeEventListener('scroll', changeBackground);
+    window.addEventListener("scroll", changeBackground);
+    return () => window.removeEventListener("scroll", changeBackground);
   }, []);
 
   // Função para aplicar classe condicionalmente
   const linkClassName = (section) => {
     return `${styles.navButton} hoverText ${
-      activeSection === section ? 'activeLink' : ''
+      activeSection === section ? "activeLink" : ""
     }`;
   };
   // Função para adicionar < /> ao nome da seção
   const renderLinkText = (section, text) => {
     return (
-      <span className={activeSection === section ? styles.activeLinkText : ''}>
+      <span className={activeSection === section ? styles.activeLinkText : ""}>
         {activeSection === section ? `< ${text} />` : text}
       </span>
     );
@@ -65,12 +65,12 @@ const NavBar = ({ language, setLanguage }) => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [toggleMenu]);
 
   return (
-    <nav className={navBackground ? styles.navScroll : ''}>
+    <nav className={navBackground ? styles.navScroll : ""}>
       <div className={styles.navLinks}>
         <a
           href="https://github.com/oPedroFlores"
@@ -92,31 +92,31 @@ const NavBar = ({ language, setLanguage }) => {
       </div>
       <div
         ref={flyerMenu}
-        className={`${styles.navOptions} ${toggleMenu ? styles.FlyerMenu : ''}`}
+        className={`${styles.navOptions} ${toggleMenu ? styles.FlyerMenu : ""}`}
       >
         <div className={styles.navButtons}>
-          <a className={linkClassName('homePage')} href="#homePage">
-            {renderLinkText('homePage', language.navBar.aboutMe)}
+          <a className={linkClassName("homePage")} href="#homePage">
+            {renderLinkText("homePage", language.navBar.aboutMe)}
           </a>
-          <a className={linkClassName('tecnologies')} href="#tecnologies">
-            {renderLinkText('tecnologies', language.navBar.tecnologies)}
+          <a className={linkClassName("tecnologies")} href="#tecnologies">
+            {renderLinkText("tecnologies", language.navBar.tecnologies)}
           </a>
-          <a className={linkClassName('history')} href="#history">
-            {renderLinkText('history', language.navBar.history)}
+          <a className={linkClassName("history")} href="#history">
+            {renderLinkText("history", language.navBar.history)}
           </a>
-          <a className={linkClassName('projects')} href="#projects">
-            {renderLinkText('projects', language.navBar.projects)}
+          <a className={linkClassName("projects")} href="#projects">
+            {renderLinkText("projects", language.navBar.projects)}
           </a>
-          <a className={linkClassName('certificates')} href="#certificates">
-            {renderLinkText('certificates', language.navBar.certificates)}
+          <a className={linkClassName("certificates")} href="#certificates">
+            {renderLinkText("certificates", language.navBar.certificates)}
           </a>
-          <a className={linkClassName('contact')} href="#contact">
-            {renderLinkText('contact', language.navBar.contact)}
+          <a className={linkClassName("contact")} href="#contact">
+            {renderLinkText("contact", language.navBar.contact)}
           </a>
         </div>
         <div className={styles.navLanguage}>
-          <button onClick={() => setLanguage(0)}>Português</button>
-          <button onClick={() => setLanguage(1)}>English</button>
+          <button onClick={() => setLanguage(0)}>PT-BR</button>
+          <button onClick={() => setLanguage(1)}>EN-US</button>
         </div>
       </div>
       <button

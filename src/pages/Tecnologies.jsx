@@ -1,26 +1,26 @@
-import React from 'react';
-import styles from '../css/Tecnologies.module.css';
-import tecImg from '../img/tecimage.png';
-import { motion } from 'framer-motion';
-import TechCard from './components/TechCard';
+import React from "react";
+import styles from "../css/Tecnologies.module.css";
+import tecImg from "../img/tecimage.png";
+import { motion } from "framer-motion";
+import TechCard from "./components/TechCard";
 
 const Tecnologies = ({ language, techs }) => {
   const [isSmallScreen, setIsSmallScreen] = React.useState(
-    window.innerWidth < 500,
+    window.innerWidth < 500
   );
   React.useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 500);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   const animationDuration = 6;
   const animation = {
     y: [0, -20, 0],
     transition: {
       duration: animationDuration,
-      ease: 'easeInOut',
+      ease: "easeInOut",
       repeat: Infinity,
       repeatDelay: 3,
     },
@@ -29,7 +29,7 @@ const Tecnologies = ({ language, techs }) => {
     y: isSmallScreen ? [-30, -110, -30] : [-60, -160, -60],
     transition: {
       duration: animationDuration,
-      ease: 'easeInOut',
+      ease: "easeInOut",
       repeat: Infinity,
       repeatDelay: 3,
     },
@@ -38,7 +38,7 @@ const Tecnologies = ({ language, techs }) => {
     y: isSmallScreen ? [-30, 0, -30] : [-60, 0, -60],
     transition: {
       duration: animationDuration,
-      ease: 'easeInOut',
+      ease: "easeInOut",
       repeat: Infinity,
       repeatDelay: 3,
     },
@@ -50,7 +50,7 @@ const Tecnologies = ({ language, techs }) => {
 
   React.useEffect(() => {
     setWidth(
-      slider_wrapper.current.scrollWidth - slider_wrapper.current.offsetWidth,
+      slider_wrapper.current.scrollWidth - slider_wrapper.current.offsetWidth
     );
   }, []);
 
@@ -64,20 +64,7 @@ const Tecnologies = ({ language, techs }) => {
       y: 0,
       transition: {
         duration: 1,
-        ease: 'easeInOut',
-      },
-    },
-  };
-
-  const fadeAnimation = {
-    initial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-      transition: {
-        duration: 2,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       },
     },
   };
@@ -89,10 +76,10 @@ const Tecnologies = ({ language, techs }) => {
       setLargura(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -130,7 +117,7 @@ const Tecnologies = ({ language, techs }) => {
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
           className={styles.techsDivWrapper}
-          whileTap={{ cursor: 'grabbing' }}
+          whileTap={{ cursor: "grabbing" }}
         >
           {techs
             .sort((a, b) => b.level - a.level)

@@ -27,7 +27,7 @@ function App() {
         <History language={currentLanguage} />
         <Projects projects={currentLanguage.projects} />
         <Certificates certificates={currentLanguage.certificates} />
-        <GetInTouch />
+        <GetInTouch language={currentLanguage.getInTouch} />
       </main>
     </>
   );
