@@ -1,23 +1,30 @@
-import React from 'react';
-import styles from '../css/GetInTouch.module.css';
-import emailjs from 'emailjs-com';
+import React from "react";
+import styles from "../css/GetInTouch.module.css";
+import emailjs from "emailjs-com";
 
 const GetInTouch = ({ language }) => {
   const form = React.useRef();
   const [send, setSend] = React.useState(false);
   const [sending, setSending] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
-  const [message, setMessage] = React.useState('');
-  const [userName, setUserName] = React.useState('');
-  const [userEmail, setUserEmail] = React.useState('');
-  const [userMessage, setUserMessage] = React.useState('');
+  const [message, setMessage] = React.useState("");
+  const [userName, setUserName] = React.useState("");
+  const [userEmail, setUserEmail] = React.useState("");
+  const [userMessage, setUserMessage] = React.useState("");
+
+  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiUrl = process.env.REACT_APP_API_URL;
+
+  console.log("apiKey:", apiKey); // Deveria exibir "testeemdesenvolvimento"
+  console.log("apiUrl:", apiUrl); // Deveria exibir "testeemdesenvolvimento"
+
   const sendEmail = (e) => {
     if (sending) return;
     setSending(true);
     e.preventDefault();
-    const serviceID = 'service_ndnpdpr';
-    const templateID = 'template_jxdxadq';
-    const userID = 'KBuKQrHHeWsicceTu';
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const userID = process.env.REACT_APP_USER_ID;
 
     let params = {
       user_name: userName,
@@ -30,16 +37,16 @@ const GetInTouch = ({ language }) => {
         setMessage(language.success);
         setSuccess(true);
         params = {
-          user_name: '',
-          user_email: '',
-          message: '',
+          user_name: "",
+          user_email: "",
+          message: "",
         };
         setSend(true);
       },
       () => {
         setMessage(language.error);
         setSuccess(false);
-      },
+      }
     );
 
     form.current.reset();
@@ -50,7 +57,7 @@ const GetInTouch = ({ language }) => {
     <section className={styles.getinTouch} id="contact">
       <div
         className={`${styles.messageContainer} ${
-          success ? styles.successSendContainer : ''
+          success ? styles.successSendContainer : ""
         }`}
       >
         <h3>{message ? message : language.title}</h3>
@@ -61,7 +68,7 @@ const GetInTouch = ({ language }) => {
                 type="text"
                 name="user_name"
                 required
-                onchange={(e) => setUserName(e.target.value)}
+                onChange={(e) => setUserName(e.target.value)}
               />
               <span>{language.firstInput}</span>
             </div>
@@ -70,7 +77,7 @@ const GetInTouch = ({ language }) => {
                 type="text"
                 name="user_email"
                 required
-                onchange={(e) => setUserEmail(e.target.value)}
+                onChange={(e) => setUserEmail(e.target.value)}
               />
               <span>{language.secondInput}</span>
             </div>
@@ -78,7 +85,7 @@ const GetInTouch = ({ language }) => {
               <textarea
                 name="message"
                 required
-                onchange={(e) => setUserMessage(e.target.value)}
+                onChange={(e) => setUserMessage(e.target.value)}
               />
               <span>{language.thirdInput} </span>
             </div>
@@ -91,7 +98,7 @@ const GetInTouch = ({ language }) => {
             </button>
           </form>
         ) : (
-          ''
+          ""
         )}
       </div>
     </section>

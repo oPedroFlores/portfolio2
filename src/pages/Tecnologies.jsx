@@ -122,7 +122,12 @@ const Tecnologies = ({ language, techs }) => {
           {techs
             .sort((a, b) => b.level - a.level)
             .map((tech, index) => (
-              <TechCard tech={tech} index={index} largura={largura} />
+              <TechCard
+                tech={tech}
+                index={index}
+                largura={largura}
+                key={tech.name}
+              />
             ))}
         </motion.div>
       </motion.div>

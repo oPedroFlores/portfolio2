@@ -5,7 +5,7 @@ const Certificates = ({ certificates }) => {
   return (
     <section className={styles.certificatesSection} id="certificates">
       {certificates.map((certificate) => (
-        <div className={styles.certificate}>
+        <div className={styles.certificate} key={certificate.name}>
           <h3>{certificate.name}</h3>
           <p>{certificate.desc}</p>
           <span>{certificate.time}</span>

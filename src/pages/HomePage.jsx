@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from '../css/Home.module.css';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { ReactComponent as Curriculo } from '../img/svg/cv2.svg';
-import { motion } from 'framer-motion';
-import Modal from './modal/Modal';
-import Button from '../components/Button';
-import AboutMeModal from './modal/AboutMeModal';
+import React from "react";
+import styles from "../css/Home.module.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { ReactComponent as Curriculo } from "../img/svg/cv2.svg";
+import { motion } from "framer-motion";
+import Modal from "./modal/Modal";
+import Button from "../components/Button";
+import AboutMeModal from "./modal/AboutMeModal";
 
 const HomePage = ({ language, curriculo }) => {
   const [modal, setModal] = React.useState(false);
@@ -15,14 +15,14 @@ const HomePage = ({ language, curriculo }) => {
   }
   React.useEffect(() => {
     if (modal) {
-      document.body.classList.add('no-scroll');
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     }
 
     // Limpeza ao desmontar o componente
     return () => {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     };
   }, [modal]);
   // Efeito typewriter
@@ -52,7 +52,7 @@ const HomePage = ({ language, curriculo }) => {
             >
               Pedro Flores
             </motion.h1>
-            <span class="waveHand">👋</span>
+            <span className="waveHand">👋</span>
           </div>
           <motion.p
             variants={{

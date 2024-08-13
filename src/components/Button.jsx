@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Button = ({ theFunction, text }) => {
   return (
-    <button onClick={theFunction} class="defaultButton">
+    <button onClick={theFunction} className="defaultButton">
       {text}
     </button>
   );
