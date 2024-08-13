@@ -180,7 +180,10 @@
       "firstInput": "Seu Nome",
       "secondInput": "Email",
       "thirdInput": "Sua Mensagem...",
-      "button": "Enviar"
+      "button": "Enviar",
+      "sendingButton": "Enviando...",
+      "success": "Mensagem enviada com sucesso! Obrigado pelo seu contato!",
+      "error": "Erro ao enviar a mensagem!"
     }
   },
   "en": {
@@ -364,7 +367,10 @@
       "firstInput": "Your Name",
       "secondInput": "Email",
       "thirdInput": "Your Message...",
-      "button": "Send"
+      "button": "Send",
+      "sendingButton": "Sending...",
+      "success": "Message sent! Thank you for your message!",
+      "error": "Error sending message!"
     }
   }
 }
