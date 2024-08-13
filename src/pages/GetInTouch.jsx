@@ -12,12 +12,6 @@ const GetInTouch = ({ language }) => {
   const [userEmail, setUserEmail] = React.useState("");
   const [userMessage, setUserMessage] = React.useState("");
 
-  const apiKey = process.env.REACT_APP_API_KEY;
-  const apiUrl = process.env.REACT_APP_API_URL;
-
-  console.log("apiKey:", apiKey); // Deveria exibir "testeemdesenvolvimento"
-  console.log("apiUrl:", apiUrl); // Deveria exibir "testeemdesenvolvimento"
-
   const sendEmail = (e) => {
     if (sending) return;
     setSending(true);
