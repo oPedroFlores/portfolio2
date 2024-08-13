@@ -13,6 +13,10 @@ const GetInTouch = ({ language }) => {
   const [userMessage, setUserMessage] = React.useState("");
 
   const sendEmail = (e) => {
+    console.log("Enviando email.");
+    console.log("Nome: " + userName);
+    console.log("Email: " + userEmail);
+    console.log("Mensagem: " + userMessage);
     if (sending) return;
     setSending(true);
     e.preventDefault();
