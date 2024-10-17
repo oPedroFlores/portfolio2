@@ -1,8 +1,8 @@
-import React from 'react';
-import images from '../../img/projectImages';
+import React from "react";
+import images from "../../img/projectImages";
 
-import { FaGithub } from 'react-icons/fa';
-import { TbWorldWww } from 'react-icons/tb';
+import { FaGithub } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
 
 const ProjectCard = ({ projects, styles }) => {
   return (
@@ -12,7 +12,7 @@ const ProjectCard = ({ projects, styles }) => {
           <div className={styles.project}>
             <div className={styles.projectHeader}>
               <h3>{project.name}</h3>
-              <div>
+              <div className={styles.links}>
                 <a
                   href={project.github}
                   target="_blank"

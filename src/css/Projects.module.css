@@ -191,6 +191,9 @@
   .filterContainer {
     flex-direction: column;
   }
+  .links {
+    position: relative !important;
+  }
   .filterContainer input {
     width: 90%;
   }
@@ -244,4 +247,12 @@
   .project div a {
     padding: 10px 10px;
   }
+}
+
+.links {
+  top: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

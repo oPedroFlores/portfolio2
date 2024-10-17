@@ -19,6 +19,15 @@
       "icon": "jsx"
     },
     {
+      "id": 11,
+      "tec": "Next",
+      "level": 3.5,
+      "levelDesc": "Intermediário",
+      "time": "1 Ano",
+      "desc": "Já possuo uma boa base de conhecimento em Next. Já realizei alguns projetos e estudo sobre Next.",
+      "icon": "next"
+    },
+    {
       "id": 3,
       "tec": "Node",
       "level": 2,
@@ -109,6 +118,15 @@
       "time": "2 Years",
       "desc": "I have a good understanding of React. I have completed several courses and projects using React, including this portfolio which was built with React and some of its libraries.",
       "icon": "jsx"
+    },
+    {
+      "id": 11,
+      "tec": "Next",
+      "level": 3.5,
+      "levelDesc": "Intermediate",
+      "time": "1 Year",
+      "desc": "I have a solid foundation in Next.js. I have completed several projects and continue to study the framework.",
+      "icon": "next"
     },
     {
       "id": 3,

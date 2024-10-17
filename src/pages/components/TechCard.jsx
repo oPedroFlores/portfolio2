@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../../css/Tecnologies.module.css';
+import React from "react";
+import styles from "../../css/Tecnologies.module.css";
 import {
   FaJs,
   FaReact,
@@ -9,10 +9,12 @@ import {
   FaPhp,
   FaWordpress,
   FaBootstrap,
-} from 'react-icons/fa';
-import { SiExpress } from 'react-icons/si';
-import { TbBrandMysql } from 'react-icons/tb';
-import { motion } from 'framer-motion';
+} from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+
+import { SiExpress } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import { motion } from "framer-motion";
 const TechCard = ({ tech, index, largura }) => {
   const iconMapping = {
     js: <FaJs />,
@@ -25,6 +27,7 @@ const TechCard = ({ tech, index, largura }) => {
     wordpress: <FaWordpress />,
     bootstrap: <FaBootstrap />,
     express: <SiExpress />,
+    next: <SiNextdotjs />,
   };
 
   const fadeInAnimationText = {

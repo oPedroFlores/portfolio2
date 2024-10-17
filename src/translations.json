@@ -59,6 +59,15 @@
         "github": "https://github.com/oPedroFlores/MyFriends"
       },
       {
+        "id": 6,
+        "name": "PXG Helper",
+        "desc": "O site PXG Helper é um site para ajudar os jogadores de PXG com informações sobre o jogo. Ele possui sistemas de comentários, contas, e muito mais.",
+        "tecs": ["JavaScript", "Next.js", "JWT", "Firebase"],
+        "image": 5,
+        "github": "https://github.com/oPedroFlores/pxg-helper",
+        "link": "https://pxghelper.vercel.app/"
+      },
+      {
         "id": 2,
         "name": "Blog Node",
         "desc": "Blog Node foi um projeto que fiz com base em um curso de Node. Permite a criação de usuários, artigos e categorias de artigos. Possui proteção de rotas",
@@ -245,6 +254,16 @@
         "image": 0,
         "github": "https://github.com/oPedroFlores/MyFriends"
       },
+      {
+        "id": 6,
+        "name": "PXG Helper",
+        "desc": "The PXG Helper website is a platform designed to assist PXG players with game information. It features comment systems, user accounts, and much more.",
+        "tecs": ["JavaScript", "Next.js", "JWT", "Firebase"],
+        "image": 5,
+        "github": "https://github.com/oPedroFlores/pxg-helper",
+        "link": "https://pxghelper.vercel.app/"
+      },
+
       {
         "id": 2,
         "name": "Blog Node",
