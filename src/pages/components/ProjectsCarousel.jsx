@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import styles from '../../css/Projects.module.css';
 
-const ProjectsCarousel = ({ projects }) => {
+const ProjectsCarousel = ({ projects, language }) => {
   const sliderRef = useRef(null);
   const slidesRef = useRef(null);
 
@@ -52,7 +52,7 @@ const ProjectsCarousel = ({ projects }) => {
         dragTransition={{ bounceDamping: 18 }}
         className={styles.slides}
       >
-        <ProjectCard projects={projects} styles={styles} />
+        <ProjectCard projects={projects} styles={styles} language={language} />
       </motion.ul>
     </div>
   );

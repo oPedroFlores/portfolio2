@@ -32,7 +32,7 @@ function App() {
           techs={language ? techs.en : techs.pt}
         />
         <History language={currentLanguage} />
-        <Projects projects={currentLanguage.projects} />
+        <Projects projects={currentLanguage.projects} language={language} />
         <Certificates certificates={currentLanguage.certificates} />
         <GetInTouch language={currentLanguage.getInTouch} />
       </main>

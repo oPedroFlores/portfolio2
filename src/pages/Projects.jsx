@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../css/Projects.module.css';
 import ProjectsCarousel from './components/ProjectsCarousel';
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects, language }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTech, setSelectedTech] = useState('');
 
@@ -42,7 +42,7 @@ const Projects = ({ projects }) => {
           ))}
         </select>
       </div>
-      <ProjectsCarousel projects={filteredProjects} />
+      <ProjectsCarousel projects={filteredProjects} language={language} />
     </section>
   );
 };

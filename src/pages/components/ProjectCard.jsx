@@ -1,10 +1,10 @@
-import React from "react";
-import images from "../../img/projectImages";
+import React from 'react';
+import images from '../../img/projectImages';
 
-import { FaGithub } from "react-icons/fa";
-import { TbWorldWww } from "react-icons/tb";
+import { FaGithub } from 'react-icons/fa';
+import { TbWorldWww } from 'react-icons/tb';
 
-const ProjectCard = ({ projects, styles }) => {
+const ProjectCard = ({ projects, styles, language }) => {
   return (
     <>
       {projects.map((project) => (
@@ -19,7 +19,7 @@ const ProjectCard = ({ projects, styles }) => {
                   rel="noreferrer"
                   className={styles.leftLink}
                 >
-                  <FaGithub /> Código
+                  <FaGithub /> GitHub
                 </a>
 
                 {project.link && (
@@ -29,7 +29,8 @@ const ProjectCard = ({ projects, styles }) => {
                     rel="noreferrer"
                     className={styles.rightLink}
                   >
-                    <TbWorldWww /> Projeto
+                    <TbWorldWww />{' '}
+                    {language === 0 ? 'Ver Projeto' : 'See Project'}
                   </a>
                 )}
               </div>
