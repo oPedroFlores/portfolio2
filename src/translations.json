@@ -51,6 +51,15 @@
     },
     "projects": [
       {
+        "id": 7,
+        "name": "Venus Marketplace",
+        "desc": "Uma landing page utilizando Next.js sobre um marketplace ficticio de vendas e criações de NFT's.",
+        "techs": ["Next.js", "CSS", "JavaScript", "Framer Motion"],
+        "image": 6,
+        "github": "https://github.com/oPedroFlores/venus-marketplace",
+        "link": "https://venus-marketplace.pedroflores.xyz/"
+      },
+      {
         "id": 1,
         "name": "MyFriends",
         "desc": "MyFriends foi um projeto que desenvolvi com base no curso de React Completo da Origamid. Adicionei algumas funcionalidades como dar like, remover comentários e reatividade entre visualizações e curtidas.",
@@ -246,6 +255,15 @@
       ]
     },
     "projects": [
+      {
+        "id": 7,
+        "name": "Venus Marketplace",
+        "desc": "A landing page using Next.js about a fictional marketplace for sales and NFT creation.",
+        "techs": ["Next.js", "CSS", "JavaScript", "Framer Motion"],
+        "image": 6,
+        "github": "https://github.com/oPedroFlores/venus-marketplace",
+        "link": "https://venus-marketplace.pedroflores.xyz/"
+      },
       {
         "id": 1,
         "name": "MyFriends",
